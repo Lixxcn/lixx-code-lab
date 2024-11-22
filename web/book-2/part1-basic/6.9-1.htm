@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        //定义一个升序函数
+        function up(a, b) {
+            return a - b;
+        }
+        //定义一个降序函数
+        function down(a, b) {
+            return b - a;
+        }
+        //定义数组
+        var arr = [3, 9, 1, 12, 50, 21];
+        arr.sort(up);
+        document.write("升序：" + arr.join("、") + "<br/>");
+        arr.sort(down);
+        document.write("降序：" + arr.join("、"));
+    </script>
+</head>
+<body>
+</body>
+</html>

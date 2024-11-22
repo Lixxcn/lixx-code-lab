@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+
+            oBtn.addEventListener("click", function () {
+                alert("第1次");
+            }, false);
+            oBtn.addEventListener("click", function () {
+                alert("第2次");
+            }, false);
+            oBtn.addEventListener("click", function () {
+                alert("第3次");
+            }, false);
+        }
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="按钮"/>
+</body>
+</html>

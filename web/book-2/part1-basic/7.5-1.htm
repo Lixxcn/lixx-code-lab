@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        var weekday = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
+        var d = new Date();
+
+        //获取年、月、日
+        var myDay = d.getDate();
+        var myMonth = d.getMonth() + 1;
+        var myYear = d.getFullYear();
+        //获取星期几
+        var myWeekday = weekday[d.getDay()];
+
+        document.write("今天是" + myYear + "年" + myMonth + "月" + myDay + "日&nbsp;&nbsp;" + myWeekday);
+    </script>
+</head>
+<body>
+</body>
+</html>

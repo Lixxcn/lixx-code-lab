@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+            var oBox = document.getElementById("box");
+
+            oBtn.onclick = function () {
+                alert(oBox.style.width);
+            };
+        }
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="获取宽度" />
+    <div id="box" style="width:100px;height:100px;background-color:hotpink"></div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oTxt1 = document.getElementById("txt1");
+            var oTxt2 = document.getElementById("txt2");
+
+            oTxt1.onselect = function () {
+                alert("你选中了单行文本框中的内容");
+            };
+            oTxt2.onselect = function () {
+                alert("你选中了多行文本框中的内容");
+            };
+        }
+    </script>
+</head>
+<body>
+    <input id="txt1" type="text" value="绿叶学习网，给你初恋般的感觉"/><br />
+    <textarea id="txt2" cols="20" rows="5">绿叶学习网，给你初恋般的感觉</textarea>
+</body>
+</html>

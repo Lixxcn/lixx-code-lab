@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        var str = "how are you doing？";
+        //定义一个空字符串，用来保存字符
+        var result = "";
+
+        for (var i = 0; i < str.length; i++) {
+            if (str.charAt(i) < "s") {
+                result += str.charAt(i) + ",";
+            }
+        }
+        document.write(result);
+    </script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        var str = "Can you can a can as a Canner can can a can";
+        var n = 0;
+
+        for (var i = 0; i < str.length; i++) {
+            var char = str.charAt(i);
+            //将每一个字符转换为小写，然后判断是否与“c”相等
+            if (char.toLowerCase() == "c") {
+                n += 1;
+            }
+        }
+        document.write("字符串中含有" + n + "个字母c");
+    </script>
+</head>
+<body>
+</body>
+</html>

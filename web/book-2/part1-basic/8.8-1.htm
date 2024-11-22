@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        var str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+        var arr = str.split("");
+        var result = "";
+        for (var i = 0; i < 4; i++) {
+            var n = Math.floor(Math.random() * (arr.length + 1));
+            result += arr[n];
+        }
+        document.write(result);
+    </script>
+</head>
+<body>
+</body>
+</html>

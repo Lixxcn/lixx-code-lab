@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oInput = document.getElementsByName("fruit");
+            for (var i = 0; i < oInput.length; i++) {
+                oInput[i].checked = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    你喜欢的水果:
+    <label><input type="checkbox" name="fruit" value="苹果" />苹果</label>
+    <label><input type="checkbox" name="fruit" value="香蕉" />香蕉</label>
+    <label><input type="checkbox" name="fruit" value="西瓜" />西瓜</label>
+</body>
+</html>

@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oTxt = document.getElementById("txt");
+            var oNum = document.getElementById("num");
+
+            oTxt.onkeyup = function () {
+                var str = oTxt.value;
+                oNum.innerHTML = str.length;
+            };
+        };
+    </script>
+</head>
+<body>
+    <input id="txt" type="text" />
+    <div>字符串长度为：<span id="num">0</span></div>
+</body>
+</html>

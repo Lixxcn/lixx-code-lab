@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oUl = document.getElementById("list");
+            var oLi = oUl.getElementsByTagName("li");
+
+            for (var i = 0; i < oLi.length; i++) {
+                oLi[i].onclick = function () {
+                    oLi[i].style.color = "hotpink";
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</body>
+</html>

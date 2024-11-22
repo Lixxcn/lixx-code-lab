@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+            oBtn.onclick = function () {
+                //获取body中的第1个元素
+                var oFirst = document.querySelector("body *:first-child");
+
+                //获取2个文本框
+                var oTag = document.getElementById("tag");
+                var oTxt = document.getElementById("txt");
+                //根据2个文本框的值来创建一个新节点
+                var oNewTag = document.createElement(oTag.value);
+                var oNewTxt = document.createTextNode(oTxt.value);
+
+                oNewTag.appendChild(oNewTxt);
+                document.body.replaceChild(oNewTag, oFirst);
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>绿叶学习网</p>
+    <hr/>
+    输入标签：<input id="tag" type="text" /><br />
+    输入内容：<input id="txt" type="text" /><br />
+    <input id="btn" type="button" value="替换" />
+</body>
+</html>

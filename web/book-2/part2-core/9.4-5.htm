@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            document.body.innerHTML = "<input id='btn' type='button' value='按钮'/><input type='button' value='按钮'/><input type='button' value='按钮'/>"
+            var oBtn = document.getElementById("btn");
+
+            oBtn.onclick = function () {
+                alert("表单元素共有：" + oBtn.length + "个");
+            };
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

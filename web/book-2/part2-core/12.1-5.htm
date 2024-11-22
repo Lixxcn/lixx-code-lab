@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oP = document.getElementById("content");
+            var oBtn = document.getElementById("btn");
+
+            //为p添加事件
+            oP.addEventListener("click", changeColor, false);
+
+            //点击按钮后，为p解除事件
+            oBtn.addEventListener("click", function () {
+                oP.removeEventListener("click", changeColor, false);
+            }, false);
+
+            function changeColor() {
+                this.style.color = "hotpink";
+            }
+        }
+    </script>
+</head>
+<body>
+    <p id="content">绿叶学习网</p>
+    <input id="btn" type="button" value="解除" />
+</body>
+</html>

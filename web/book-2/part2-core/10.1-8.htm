@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+            var oPic = document.getElementById("pic");
+            var flag = true;
+
+            oBtn.onclick = function () {
+                if (flag) {
+                    oPic.src = "images/2.png";
+                    flag = false;
+                } else {
+                    oPic.src = "images/1.png";
+                    flag = true;
+                }
+            };
+        }
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="修改" /><br/>
+    <img id="pic" src="images/1.png"/>
+</body>
+</html> 

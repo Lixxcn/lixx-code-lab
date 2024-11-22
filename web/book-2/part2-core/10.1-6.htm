@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+            var oSelect = document.getElementById("select");
+
+            oBtn.onclick = function () {
+                alert(oSelect.value);
+            };
+        }
+    </script>
+</head>
+<body>
+    <select id="select">
+        <option value="北京">北京</option>
+        <option value="上海">上海</option>
+        <option value="广州">广州</option>
+        <option value="深圳">深圳</option>
+        <option value="杭州">杭州</option>
+    </select>
+    <input id="btn" type="button" value="获取" />
+</body>
+</html>

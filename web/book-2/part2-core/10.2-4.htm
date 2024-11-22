@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        .main{color:red;font-weight:bold;}
+    </style>
+    <script>
+        window.onload = function () {
+            var oP = document.getElementsByTagName("p");
+            oP[0].onclick = function () {
+                oP[0].removeAttribute("class");
+            };
+        }
+    </script>
+</head>
+<body>
+    <p class="main">绿叶学习网</p>
+</body>
+</html>

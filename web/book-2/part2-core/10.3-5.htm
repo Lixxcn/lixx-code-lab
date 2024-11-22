@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        .oldBox 
+        {
+            width: 100px;
+            height: 100px;
+            background-color: hotpink;
+        }
+        .newBox
+        {
+            width:50px;
+            height:50px;
+            background-color:lightskyblue;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+            var oBox = document.getElementById("box");
+
+            oBtn.onclick = function () {
+                oBox.className = "newBox";
+            };
+        }
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="切换" />
+    <div id="box" class="oldBox"></div>
+</body>
+</html>

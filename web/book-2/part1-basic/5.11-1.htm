@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        function getNum(str) {
+            var num = 0;
+
+            for (var i = 0; i < str.length; i++) {
+                var char = str.charAt(i);
+                //判断是否是数字
+                if (!isNaN(char)) {
+                    num++;
+                }
+            }
+            return num;
+        }
+        document.write(getNum("1d3sdsg"));
+    </script>
+</head>
+<body>
+</body>
+</html>

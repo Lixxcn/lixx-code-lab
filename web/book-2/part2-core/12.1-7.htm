@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+            oBtn.addEventListener("click", alertMes, false);
+
+            function alertMes() {
+                alert("那你很棒棒噢~");
+                oBtn.removeEventListener("click", alertMes, false);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="弹出" />
+</body>
+</html>

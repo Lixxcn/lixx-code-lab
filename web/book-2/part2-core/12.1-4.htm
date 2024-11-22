@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        //第1次调用window.onload
+        window.onload = function () {
+            var oBtn1 = document.getElementById("btn1");
+            oBtn1.onclick = function () {
+                alert("第1次");
+            };
+        }
+
+        //第2次调用window.onload
+        window.onload = function () {
+            var oBtn2 = document.getElementById("btn2");
+            oBtn2.onclick = function () {
+                alert("第2次");
+            };
+        }
+
+        //第3次调用window.onload
+        window.onload = function () {
+            var oBtn3 = document.getElementById("btn3");
+            oBtn3.onclick = function () {
+                alert("第3次");
+            };
+        }
+    </script>
+</head>
+<body>
+    <input id="btn1" type="button" value="按钮1" /><br/>
+    <input id="btn2" type="button" value="按钮2" /><br />
+    <input id="btn3" type="button" value="按钮3" />
+</body>
+</html>

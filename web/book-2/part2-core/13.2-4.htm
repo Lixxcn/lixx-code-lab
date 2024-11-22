@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementsByTagName("input");
+            var opener = null;
+
+            oBtn[0].onclick = function () {
+                opener = window.open();
+                var strHtml = '<!DOCTYPE html>\
+                            <html>\
+                            <head>\
+                                <title></title>\
+                            </head>\
+                            <body>\
+                                <div>绿叶学习网，给你初恋般的感觉</div>\
+                            </body>\
+                            </html>';
+                opener.document.write(strHtml);
+            };
+            oBtn[1].onclick = function () {
+                var oDiv = opener.document.getElementsByTagName("div")[0];
+                oDiv.style.fontWeight = "bold";
+                oDiv.style.color = "hotpink";
+            };
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="打开新窗口" />
+    <input type="button" value="操作新窗口" />
+</body>
+</html>

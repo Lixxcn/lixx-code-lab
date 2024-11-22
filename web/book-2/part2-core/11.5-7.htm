@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oList = document.getElementById("list");
+
+            oList.onchange = function () {
+                var link = this.options[this.selectedIndex].value;
+                window.open(link);
+            };
+        }
+    </script>
+</head>
+<body>
+    <select id="list">
+        <option value="http://wwww.lvyestudy.com">绿叶学习网</option>
+        <option value="https://www.epubit.com">异步社区</option>
+        <option value="http://www.ptpress.com.cn">人邮官网</option>
+    </select>
+</body>
+</html>

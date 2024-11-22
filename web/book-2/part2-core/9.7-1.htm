@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+            oBtn.onclick = function () {
+                var oUl = document.getElementById("list");
+                //删除最后一个子元素
+                oUl.removeChild(oUl.lastElementChild);
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>Vue.js</li>
+    </ul>
+    <input id="btn" type="button" value="删除" />
+</body>
+</html>

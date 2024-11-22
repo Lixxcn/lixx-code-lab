@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oDiv = document.getElementsByTagName("div")[0];
+            var oP = document.getElementsByTagName("p")[0];
+
+            oDiv.onclick = changeColor;
+            oP.onclick = changeColor;
+            function changeColor() {
+                this.style.color = "hotpink";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>绿叶，给你初恋般的感觉~</div>
+    <p>绿叶，给你初恋般的感觉~</p>
+</body>
+</html>

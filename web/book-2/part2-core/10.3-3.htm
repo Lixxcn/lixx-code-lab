@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        #box
+        {
+            width:100px;
+            height:100px;
+            background-color:hotpink;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+            var oBox = document.getElementById("box");
+
+            oBtn.onclick = function () {
+                //获取2个文本框的值（也就是输入的内容）
+                var attr = document.getElementById("attr").value;
+                var val = document.getElementById("val").value;
+                oBox.style[attr] = val;
+            };
+        }
+    </script>
+</head>
+<body>
+    属性：<input id="attr" type="text"/><br/>
+    取值：<input id="val" type="text"/><br/>
+    <input id="btn" type="button" value="设置" />
+    <div id="box"></div>
+</body>
+</html>

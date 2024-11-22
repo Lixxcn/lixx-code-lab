@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+            oBtn.onclick = function () {
+                alert(oBtn.getAttribute("id"));
+            }
+        }
+    </script>
+</head>
+<body>
+    <input id="btn" class="myBtn" type="button" value="获取"/>
+</body>
+</html>

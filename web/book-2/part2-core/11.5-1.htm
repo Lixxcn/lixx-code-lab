@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        #search{color:#bbbbbb;}
+    </style>
+    <script>
+        window.onload = function () {
+            //获取元素对象
+            var oSearch = document.getElementById("search");
+
+            //获取焦点
+            oSearch.onfocus = function () {
+                if (this.value == "百度一下，你就知道") {
+                    this.value = "";
+                }
+            };
+            //失去焦点
+            oSearch.onblur = function () {
+                if (this.value == "") {
+                    this.value = "百度一下，你就知道";
+                }
+            };
+        }
+    </script>
+</head>
+<body>
+    <input id="search" type="text" value="百度一下，你就知道"/>
+    <input id="Button1" type="button" value="搜索" />
+</body>
+</html>

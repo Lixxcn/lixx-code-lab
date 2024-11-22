@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var arr = ["HTML", "CSS", "JavaScript", "jQuery", "Vue.js"];
+            var oUl = document.getElementById("list");
+            var oLi = document.getElementsByTagName("li");
+
+            for (var i = 0; i < oLi.length; i++) {
+                oLi[i].innerHTML = arr[i];
+                oLi[i].style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <ul id="list">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

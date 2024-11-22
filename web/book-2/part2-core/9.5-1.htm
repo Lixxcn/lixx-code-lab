@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oDiv = document.getElementById("content");
+            var oStrong = document.createElement("strong");
+            var oTxt = document.createTextNode("绿叶学习网");
+
+            //将文本节点插入strong元素
+            oStrong.appendChild(oTxt);
+            //将strong元素插入div元素（这个div在HTML已经存在）
+            oDiv.appendChild(oStrong);
+        }
+    </script>
+</head>
+<body>
+    <div id="content"></div>
+</body>
+</html>

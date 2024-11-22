@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script>
+        window.onload = function () {
+            var oBtn = document.getElementById("btn");
+            var opener = null;
+
+            oBtn.onclick = function () {
+                opener = window.open();
+                var strHtml = '<!DOCTYPE html>\
+                            <html>\
+                            <head>\
+                                <title></title>\
+                            </head>\
+                            <body>\
+                                <strong>绿叶学习网，给你初恋般的感觉</strong>\
+                            </body>\
+                            </html>';
+
+                opener.document.write(strHtml);
+            };
+        }
+    </script>
+</head>
+<body>
+    <input id="btn" type="button" value="打开" />
+</body>
+</html>
