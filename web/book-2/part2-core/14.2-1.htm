@@ -1,13 +1,23 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
     <meta charset="utf-8" />
     <script>
-        var url = document.URL;
+        // var url = document.URL;
+        var url;
+        url = window.location.href;
         document.write("当前页面地址是：" + url);
+        window.onload = function () {
+            setTimeout(function () {
+                window.location.href = "14.2-2.htm";
+            }, 2000);
+        }
     </script>
 </head>
+
 <body>
 </body>
+
 </html>

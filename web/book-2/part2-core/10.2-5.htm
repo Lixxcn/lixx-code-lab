@@ -1,10 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
     <meta charset="utf-8" />
     <style type="text/css">
-        .main{color:red;font-weight:bold;}
+        .main {
+            color: red;
+            font-weight: bold;
+        }
     </style>
     <script>
         window.onload = function () {
@@ -14,7 +18,8 @@
 
             //添加class
             oBtnAdd.onclick = function () {
-                oP[0].className = "main";
+                // oP[0].className = "main";
+                oP[0].setAttribute("class", "main")
             };
 
             //删除class
@@ -24,9 +29,11 @@
         }
     </script>
 </head>
+
 <body>
     <p>绿叶学习网</p>
-    <input id="btn_add" type="button" value="添加样式"/>
-    <input id="btn_remove" type="button" value="删除样式"/>
+    <input id="btn_add" type="button" value="添加样式" />
+    <input id="btn_remove" type="button" value="删除样式" />
 </body>
+
 </html>

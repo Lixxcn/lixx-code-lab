@@ -5,14 +5,13 @@
     <title></title>
     <meta charset="utf-8" />
     <script>
-        setTimeout(function () {
-            window.location.href = "https://lixx.cn";
-        }, 2000);
+        var url;
+        url = document.referrer;
+        document.write("原来的地址是：" + url);
     </script>
 </head>
 
 <body>
-    <p>2秒后跳转</p>
 </body>
 
 </html>

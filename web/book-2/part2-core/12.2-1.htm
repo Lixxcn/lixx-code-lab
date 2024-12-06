@@ -1,18 +1,21 @@
 ﻿<!DOCTYPE html>
 <html>
+
 <head>
     <title></title>
     <meta charset="utf-8" />
     <script>
         window.onload = function () {
             var oBtn = document.getElementById("btn");
-            oBtn.onclick = function (e) {
-                alert(e.type);
+            oBtn.onclick = function (eve) {
+                alert(eve.type);
             };
         }
     </script>
 </head>
+
 <body>
     <input id="btn" type="button" value="按钮" />
 </body>
+
 </html>
